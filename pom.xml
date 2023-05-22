@@ -5,37 +5,37 @@
 
 	<groupId>io.github.mfoo</groupId>
 	<artifactId>libyear-maven-plugin</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
+	<version>1.6.0-SNAPSHOT</version>
 	<name>libyear-maven-plugin Maven Mojo</name>
 	<description>This plugin helps you see how outdated your Maven project
 		dependencies are via the libyear dependency freshness measure.</description>
 	<url>https://github.com/mfoo/libyear-maven-plugin</url>
 	<packaging>maven-plugin</packaging>
 
-	<issueManagement>
-		<system>GitHub</system>
-		<url>https://github.com/mfoo/libyear-maven-plugin/issues</url>
-	</issueManagement>
+<!--	<issueManagement>-->
+<!--		<system>GitHub</system>-->
+<!--		<url>https://github.com/mfoo/libyear-maven-plugin/issues</url>-->
+<!--	</issueManagement>-->
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-	</distributionManagement>
+<!--	<distributionManagement>-->
+<!--		<snapshotRepository>-->
+<!--			<id>ossrh</id>-->
+<!--			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>-->
+<!--		</snapshotRepository>-->
+<!--		<repository>-->
+<!--			<id>ossrh</id>-->
+<!--			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+<!--		</repository>-->
+<!--	</distributionManagement>-->
 
 	<inceptionYear>2023</inceptionYear>
 
-	<developers>
-		<developer>
-			<name>Martin Foot</name>
-			<url>https://github.com/mfoo</url>
-		</developer>
-	</developers>
+<!--	<developers>-->
+<!--		<developer>-->
+<!--			<name>Martin Foot</name>-->
+<!--			<url>https://github.com/mfoo</url>-->
+<!--		</developer>-->
+<!--	</developers>-->
 
 	<licenses>
 		<license>
@@ -45,11 +45,11 @@
 		</license>
 	</licenses>
 
-	<scm>
-		<connection>scm:git:git://github.com/mfoo/libyear-maven-plugin.git</connection>
-		<developerConnection>scm:git:git@github.com:mfoo/libyear-maven-plugin.git</developerConnection>
-		<url>https://github.com/mfoo/libyear-maven-plugin/tree/main</url>
-	</scm>
+<!--	<scm>-->
+<!--		<connection>scm:git:git://github.com/mfoo/libyear-maven-plugin.git</connection>-->
+<!--		<developerConnection>scm:git:git@github.com:mfoo/libyear-maven-plugin.git</developerConnection>-->
+<!--		<url>https://github.com/mfoo/libyear-maven-plugin/tree/main</url>-->
+<!--	</scm>-->
 
 	<prerequisites>
 		<maven>3.6.3</maven>
@@ -317,34 +317,34 @@
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.12.1</version>
 			</plugin>
-			<plugin>
-				<groupId>com.diffplug.spotless</groupId>
-				<artifactId>spotless-maven-plugin</artifactId>
-				<version>2.36.0</version>
-				<configuration>
-					<java>
-						<palantirJavaFormat />
-					</java>
-					<formats>
-						<format>
-							<includes>
-								<include>**/pom.xml</include>
-							</includes>
-							<eclipseWtp>
-								<type>XML</type>
-							</eclipseWtp>
-						</format>
-					</formats>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<phase>compile</phase>
-					</execution>
-				</executions>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>com.diffplug.spotless</groupId>-->
+<!--				<artifactId>spotless-maven-plugin</artifactId>-->
+<!--				<version>2.36.0</version>-->
+<!--				<configuration>-->
+<!--					<java>-->
+<!--						<palantirJavaFormat />-->
+<!--					</java>-->
+<!--					<formats>-->
+<!--						<format>-->
+<!--							<includes>-->
+<!--								<include>**/pom.xml</include>-->
+<!--							</includes>-->
+<!--							<eclipseWtp>-->
+<!--								<type>XML</type>-->
+<!--							</eclipseWtp>-->
+<!--						</format>-->
+<!--					</formats>-->
+<!--				</configuration>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<goals>-->
+<!--							<goal>check</goal>-->
+<!--						</goals>-->
+<!--						<phase>compile</phase>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
 			<plugin>
 				<!-- For JUnit code coverage analysis on SonarCloud as part of CI builds -->
 				<groupId>org.jacoco</groupId>
